@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="t1"></h1>
+    <label for="">Harga Barang :</label>
+    <input type="number" name="" id="inputHarga">
+    <br>
+    <label for="">Diskon Barang :</label>
+    <input type="number" name="" id="inputDiskon">
+    <br>
+    <br>
+    <button type="submit" id="submitHitung">Hitung</button>
+    <div>
+        <h3 id="hargaAwal"></h3>
+        <h3 id="diskon"></h3>
+        <h3 id="potonganHarga"></h3>
+        <h3 id="hargaAkhir"></h3>
+        <h3 id="error"></h3>
+    </div>
+    <hr>
+    <div class="slot">
+        <h3 id="slot1">0</h3>
+        <h3 id="slot2">0</h3>
+        <h3 id="slot3">0</h3>
+        <h3 id="slot4">0</h3>
+        <h3 id="slot5">0</h3>
+    </div>
+    <button id="slotBtn">Gacha</button>
+
+    <br>
+    <br>
+
+    <hr>
+
+    <input type="checkbox" name="" id="berlanggananBtn">
+    <label for="berlanggananBtn">Berlangganan Sekarang</label>
+
+    <br>
+    <br>
+
+    <input type="radio" name="payment" id="shopeepayBtn">
+    <label for="shopeepayBtn">ShopeePay</label>
+
+    <br>
+
+    <input type="radio" name="payment" id="gopayBtn">
+    <label for="gopayBtn">Gopay</label>
+
+    <br>
+
+    <input type="radio" name="payment" id="danaBtn">
+    <label for="danaBtn">Dana</label>
+
+    <br>
+
+    <input type="radio" name="payment" id="ovoBtn">
+    <label for="ovoBtn">Ovo</label>
+
+    <br>
+    <br>
+
+    <button type="submit" id="berlanggananSubmitBtn">Berlangganan</button>
+
+    <br>
+
+    <h4 id="berlanggananOp"></h4>
+    <h4 id="paymentOp"></h4>
+    <h4 id="test"></h4>
+
+
+    <hr>
+
+
+    <div>
+        <h2>Konversi Suhu</h2>
+        <label for="inputUnit">Masukkan Nilai Suhu :</label>
+        <br>
+        <input type="number" id="inputUnit" value="0">
+        <br>
+        <input type="radio" id="keFahrenheit" name="konversi">
+        <label for="keFahrenheit">Celcius ---> Fahrenheit</label>
+        <br>
+        <input type="radio" id="keCelcius" name="konversi">
+        <label for="keCelcius">Fahrenheit ---> Celcius</label>
+        <br>
+        <br>
+        <button onclick="hitungSuhu()">Hitung</button>
+        <h3 id="hasilSuhu"></h3>
+    </div>
+
+    <hr>
+
+    <div class="container-dadu">
+        <h1>ROLL DADU</h1>
+        <label for="">Jumlah dadu : </label>
+        <input type="number" id="jumlahDadu" value="1" min="1">
+        <button onclick="acakDadu()">Roll</button>
+        <h3 id="hasilJumlahDadu"></h3>
+        <div id="hasilDaduImage"></div>
+    </div>
+
+    <hr>
+
+    <div class="container-password-generator">
+        <h1>PASSWORD GENERATOR</h1>
+        <label for="">Jumlah Karakter : </label>
+        <input type="number" id="panjangPass" value="10" min="1">
+        <br>
+        <br>
+        <input type="checkbox" id="hurufKecil">
+        <label for="">Huruf Kecil</label>
+        <br>
+        <input type="checkbox" id="hurufBesar">
+        <label for="">Huruf Besar</label>
+        <br>
+        <input type="checkbox" id="angka">
+        <label for="">Angka</label>
+        <br>
+        <input type="checkbox" id="simbol">
+        <label for="">Simbol</label>
+        <br>
+
+        <br>
+        <button id="generatePass">Generate</button>
+        <h3 id="hasilGenPass"></h3>
+    </div>
+
+    <hr>
+
+    <h1>TIMER</h1>
+    <button onclick="startTimer()">START</button>
+    <button onclick="clearTimer()">CLEAR</button>
+
+    <hr>
+
+    <div class="jam-container">
+        <p id="jam">00:00:00</p>
+    </div>
+
+    <hr>
+
+    <h1 align="center">STOPWATCH</h1>
+    <div id="stopwatch-container">
+        00:00:00:00
+    </div>
+    <div class="stopwatch-control">
+        <button id="startStopwatch" onclick="startStopwatch()">START</button>
+        <button id="stopStopwatch" onclick="stopStopwatch()">STOP</button>
+        <button id="resetStopwatch" onclick="resetStopwatch()">RESET</button>
+    </div>
+
+    <hr>
+
+    <h1 align="center">KALKULATOR</h1>
+    <div id="kalkulator-container">
+        <input id="kalkulator-display" readonly>
+        <div class="keys">
+            <button onclick="appendToDisplay('+')" class="keys-action">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="keys-action">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('/')" class="keys-action">/</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('*')" class="keys-action">*</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="Kalkulasi()">=</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1>DOM</h1>
+    <img src="img/dom.png">
+
+    <h1>--- SELECTOR ---</h1>
+    <h2 id="h2Buah">List Buah</h2>
+    <div class="buah">Apel</div>
+    <div class="buah">Semangka</div>
+    <div class="buah">Melon</div>
+
+    <h2>Tumbuhan akar</h2>
+    <ul>
+        <li>Wortel</li>
+        <li>Kentang</li>
+    </ul>
+
+    <h2>Sayuran</h2>
+    <ul>
+        <li>Timun</li>
+        <li>Bayam</li>
+    </ul>
+
+    <h1>--- DOM NAVIGATION ---</h1>
+    <ul id="parent1">
+        <li id="child1p1">Child 1 from Parent 1</li>
+        <li id="child2p1">Child 2 from Parent 1</li>
+        <li id="child3p1">Child 3 from Parent 1</li>
+    </ul>
+    <ul id="parent2">
+        <li id="child1p2">Child 1 from Parent 2</li>
+        <li id="child2p2">Child 2 from Parent 2</li>
+        <li id="child3p2">Child 3 from Parent 2</li>
+    </ul>
+    <ul id="parent3">
+        <li id="child1p3">Child 1 from Parent 3</li>
+        <li id="child2p3">Child 2 from Parent 3</li>
+        <li id="child3p3">Child 3 from Parent 3</li>
+    </ul>
+    <hr>
+
+    <h1>--- CREATE ---</h1>
+    <ol id="linux-distro">
+        <li id="arch">Arch</li>
+        <li id="debian">Debian</li>
+        <li id="suse">OpenSuse</li>
+    </ol>
+
+    <h1>--- EVENT LISTENER ---</h1>
+    <h2>--- click, mouseover, mouseleave ---</h2>
+
+    <div id="thisbox">
+        Click Me!
+    </div>
+
+    <h2>--- keydown, keyup ---</h2>
+    <div id="thiscontainer">
+        <div id="thisisbox">
+            Move Me!
+        </div>
+    </div>
+
+    <h2>--- toggle ---</h2>
+
+    <img src="/img/wallpape.jpg" id="thisImg">
+    <button id="thisButton">Hide</button>
+
+    <h2>--- NodeList ---</h2>
+    <div id="n-container">
+        <button class="buttons">Button 1</button>
+        <button class="buttons">Button 2</button>
+        <button class="buttons">Button 3</button>
+        <button class="buttons">Button 4</button>
+    </div>
+
+
+    <h2>--- ClassList ---</h2>
+    <button id="dieButton">Die Button 1</button>
+
+    <h1>GAME BATU GUNTING KERTAS</h1>
+
+    <div class="bgk-container">
+        <div class="bgk-pilihan">
+            <button onclick="batuGuntingKertas('batu')">BATU</button>
+            <button onclick="batuGuntingKertas('gunting')">GUNTING</button>
+            <button onclick="batuGuntingKertas('kertas')">KERTAS</button>
+        </div>
+
+        <div id="pilihanPlayer">Player :</div>
+        <div id="pilihanBot">Bot :</div>
+
+        <div id="bgk-hasil">HASIL :</div>
+
+        <div id="skorPlayerKontainer"><span id="skorPlayer">0</span></div>
+        <div id="skorBotKontainer"><span id="skorBot">0</span></div>
+    </div>
+
+
+    <hr>
+
+    <h1>IMAGE SLIDER</h1>
+    <div class="slider">
+        <div class="slides">
+            <img class="slider-gambar1"src="/img/walldeer.png">
+            <img class="slider-gambar1" src="/img/wallpape.jpg">
+            <img class="slider-gambar1" src="/img/walls.jpg">
+        </div>
+        <button id="prevSlide" onclick="prevSlide()"><</button>
+        <button id="nextSlide" onclick="nextSlide()">></button>
+    </div>
+
+    <hr>
+
+    <button onclick="FetchData()">I want a random picture of a cat</button>
+    <img src="" alt="" id="catRandomImg" style="display: none;">
+
+    <hr>
+    <h1>CUACA</h1>
+    <form class="cuaca-form">
+        <input type="text" placeholder="Nama Kota" id="kota-form">
+        <button type="submit" id="button-form">🔎</button>
+    </form>
+    <div class="cuaca-card">
+        <h3 id="cuaca-card-kota">---</h3>
+        <h1 id="cuaca-card-suhu">-</h1>
+        <p id="cuaca-card-terasa">---</p>
+        <p id="cuaca-card-kelembapan">---</p>
+        <p id="cuaca-card-deskripsi">----</p>
+    </div>
+
+    <p id="cuaca-card-error">Tolong Masukkan Nama Kota!</p>
+    <hr>
+    <script src="index.js"></script>
+</body>
+
+</html>

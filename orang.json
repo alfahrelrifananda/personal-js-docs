@@ -1,0 +1,31 @@
+[
+    {
+        "Nama": "Patrick",
+        "Age": 34,
+        "isEmployed": false,
+        "Hobbies": [
+            "Eat",
+            "Sleep",
+            "Jellyfishing"
+        ]
+    },
+    {
+        "Nama": "Spongebob",
+        "Age": 31,
+        "isEmployed": true,
+        "Hobbies": [
+            "Cook",
+            "Karate",
+            "Jellyfishing"
+        ]
+    },
+    {
+        "Nama": "Squidward",
+        "Age": 41,
+        "isEmployed": true,
+        "Hobbies": [
+            "Clarinet",
+            "Read"
+        ]
+    }
+]

@@ -1,0 +1,357 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    width: 500px;
+}
+.slot {
+    display: flex;
+    font-size: 2em;
+    justify-content: space-between;
+}
+.slot h3 {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+#slotBtn {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    text-transform: uppercase;
+    width: 100%;
+}
+#hasilDaduImage {
+    display: flex;
+}
+#hasilDaduImage img {
+    height: 50px;
+    margin: 10px;
+}
+
+.jam-container {
+    width: 100%;
+    display: grid;
+    height: 50vh;
+    background-image: url(img/wallpape.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    place-items: center;
+}
+
+#jam {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 4em;
+    font-weight: 800;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+#stopwatch-container {
+    background-color: #d8f2ff;
+    margin: 5px;
+    height: 30vh;
+    display: grid;
+    place-items: center;
+    font-size: 4em;
+    font-weight: 800;
+    border-radius: 60px;
+}
+
+.stopwatch-control {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    gap: 5px;
+}
+
+.stopwatch-control button {
+    width: 100%;
+    padding: 30px;
+    border-radius: 60px;
+    background-color: #d8f2ff;
+    border: none;
+    font-size: 1.5em;
+    font-weight: 900;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.stopwatch-control button:nth-child(1) {
+    border-radius: 60px 5px 5px 60px;
+    background-color: #a4e1ff;
+}
+.stopwatch-control button:nth-child(2) {
+    border-radius: 5px;
+    background-color: #ffa4a4;
+
+}
+.stopwatch-control button:nth-child(3) {
+    border-radius: 5px 60px 60px 5px;
+    background-color: #d0ffa4;
+    
+}
+.stopwatch-control button:active {
+    border-radius: 60px;
+}
+
+#kalkulator-container {
+    margin: 5px;
+    background-color: #e9f7ff;
+    padding: 15px;
+    border-radius: 30px;
+    overflow: hidden;
+    padding-top: 60px;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+} 
+.keys button {
+    height: 10vh;
+    border-radius: 30px;
+    border:none;
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 2em;
+    background-color: #bee9ff;
+}
+.keys button:active {
+    border-radius: 5px;
+}
+.keys button:hover {
+    opacity: .5;
+}
+.keys button.keys-action {
+    background-color: #94d1f0;
+}
+#kalkulator-display {
+    background-color: #d0efff;
+    width: calc(100% - 30px);
+    font-weight: 500;
+    padding: 15px;
+    font-size: 3em;
+    margin-bottom: 5px;
+    text-align: right;
+    border-radius: 30px;
+    border: none;
+    height: 10vh;
+    outline: none;
+
+}
+
+#linux-distro {
+    border: 2px solid black;
+    font-size: 2em;
+}
+
+#thisbox {
+    background-color: lightgreen;
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    display: grid;
+    cursor: pointer;
+    font-size: 3em;
+    font-weight: 800;
+    place-items: center;
+}
+
+#thiscontainer {
+    border: 3px solid black;
+    height: 70vh;
+}
+#thisisbox {
+    background-color: cyan;
+    width: 150px;
+    height: 150px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5em;
+    position: relative;
+}
+
+#thisImg {
+    width: 100%;
+}
+
+#n-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        width: 90%;
+    }
+}
+
+.bg-blue {
+    background-color: #a4e1ff;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-green {
+    color: green;
+}
+
+
+.bgk-container .bgk-pilihan {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.bgk-container .bgk-pilihan button {
+    width: 100%;
+    background-color: #a4e1ff;
+    font-size: 1.2em;
+    font-weight: 800;
+    border-radius: 30px;
+    height: 100px;
+    transition: all .3s;
+    cursor: pointer;
+    border: none;
+}
+.bgk-container .bgk-pilihan button:hover {
+    background-color: #0f2a37;
+    color: white;
+}
+
+#pilihanPlayer, #pilihanBot, #skorPlayerKontainer, #skorBotKontainer {
+    background-color: #d0efff;
+    margin-top: 10px;
+    border-radius: 30px 30px 5px 5px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+
+#pilihanBot, #skorBotKontainer {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 30px 30px;
+}
+
+#bgk-hasil {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    border: 1px solid black;
+    font-weight: 800;
+}
+
+#skorPlayerKontainer {
+    background-color: #d0ffa4;
+}
+#skorBotKontainer {
+    background-color: #ffa4a4;
+}
+
+
+.bg-red-lose {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.bg-green-win {
+    background-color: #a4ff50;
+    color: black;
+}
+
+.bg-grey-draw {
+    background-color: #ededed;
+    color: black;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider .slides {
+    width: 100%;
+}
+
+.slider .slides img {
+    width: 100%;
+    display: none;
+}
+
+.showSlide {
+    display: block !important;
+}
+
+.cuaca-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.cuaca-form input {
+    background-color: transparent;
+    padding: 15px;
+    width: 100%;
+    color: #0f2a37;
+    border-radius: 15px;
+    border: 1px solid #0f2a37;
+    font-size: 1.3em;
+}
+.cuaca-form button {
+    width: 75px;
+    cursor: pointer;
+    transition: all .4s;
+    border-radius: 15px;
+    font-weight: 800;
+    border: none;
+    background-color: #a4e1ff;
+    font-size: 1.1em;
+}
+
+.cuaca-form button:hover {
+    background-color: #0f2a37;
+}
+.cuaca-card {
+    color: white;
+    padding: 15px;
+    margin-top: 15px;
+    display: none;
+    margin-bottom: 15px;
+    padding-top: 30px;
+    border-radius: 30px;
+    background-image: linear-gradient(100deg, #007bb9, #ff8534);
+}
+.cuaca-card h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: 900;
+}
+ #cuaca-card-error {
+    color: #ff4242;
+    display: none;
+    font-weight: 600;
+    font-size: 1.3em;
+}

@@ -1,0 +1,12 @@
+[
+    {
+        "Nama": "Patrick",
+        "Age": 34,
+        "isEmployed": false,
+        "Hobbies": [
+            "Eat",
+            "Sleep",
+            "Jellyfishing"
+        ]
+    }
+]
